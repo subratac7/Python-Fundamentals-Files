@@ -1,0 +1,447 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Continuaion on Function:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Return the values if function:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "** use of return values\n",
+    "Ans- To control the output display return value are used"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_formatted_name(first_name, last_name):   # 2 parameters\n",
+    "    \"\"\"Return a full name, neatly formatted\"\"\"  # doc strings\n",
+    "    full_name= f\"{first_name} {last_name}\"       # variable inside a function and then the use of f strings\n",
+    "    return full_name.title() # retrun method"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Aneeta Chowdhury\n"
+     ]
+    }
+   ],
+   "source": [
+    "student= get_formatted_name('aneeta','chowdhury')\n",
+    "print (student)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Aneetac'"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "get_formatted_name ('Aneeta', 'C')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_formatted_name(first_name, last_name):   # 2 parameters\n",
+    "    \"\"\"Return a full name, neatly formatted\"\"\"  # doc strings\n",
+    "    full_name= f\"{first_name} {last_name}\"       # variable inside a function and then the use of f strings\n",
+    "    return full_name.title() # retrun method"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Tanusri C\n"
+     ]
+    }
+   ],
+   "source": [
+    "student= get_formatted_name ('Tanusri', 'C')\n",
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Tanusri C'"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "get_formatted_name('tanusri', 'c')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_formatted_name(first_name, last_name):   # 2 parameters\n",
+    "    \"\"\"Return a full name, neatly formatted\"\"\"  # doc strings\n",
+    "    full_name= f\"{first_name} {last_name}\"       # variable inside a function and then the use of f strings\n",
+    "    return full_name.title() # retrun method"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subrata C\n"
+     ]
+    }
+   ],
+   "source": [
+    "student=get_formatted_name ('subrata', 'c')\n",
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def get_formatted_name(first_name, last_name):   # 2 parameters\n",
+    "    \"\"\"Return a full name, neatly formatted\"\"\"  # doc strings\n",
+    "    full_name= f\"{first_name}{last_name}\"       # if you dont put gap between the first and last name then there  will be no space between name in the output\n",
+    "    return full_name.title() # retrun method"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Subratac\n"
+     ]
+    }
+   ],
+   "source": [
+    "student=get_formatted_name ('subrata', 'c')\n",
+    "print(student)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Returning a dictionary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def define_person(first_name, last_name):\n",
+    "    \"\"\"Return a dictionary of information about a person\"\"\"\n",
+    "    person= {'first':first_name, 'last':last_name}\n",
+    "    return person"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'first': 'Ram', 'last': 'k'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "student=define_person('Ram','k')\n",
+    "print (student)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def  define_person(first_name,last_name,age,address,nationality):\n",
+    "    \"\"\"Return a dictionary of information about a person\"\"\"\n",
+    "    person = {'first':first_name, 'last':last_name, 'current_age':age, 'current_address': address, 'current_nationality':nationality}\n",
+    "    return person"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'first': 'Rama', 'last': 'Chandan', 'current_age': '35', 'current_address': 'NYC', 'current_nationality': 'USA'}\n"
+     ]
+    }
+   ],
+   "source": [
+    "student1 = define_person ('Rama','Chandan','35','NYC','USA')\n",
+    "print(student1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Passing a list to a function"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "req: want to congratulate the students who completed the course sucessfully"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "students=['ram', 'raj','roni', 'rohit', 'ron','robin','raka','rahul']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def greeting_students(names):\n",
+    "    \"\"\"congratulations for sucessfully completing the course\"\"\"\n",
+    "    for x in names:\n",
+    "        msg= f\"keep up the good work and be successful, {x.title()}\"\n",
+    "        print (msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "keep up the good work and be successful, Ram\n",
+      "keep up the good work and be successful, Raj\n",
+      "keep up the good work and be successful, Roni\n",
+      "keep up the good work and be successful, Rohit\n",
+      "keep up the good work and be successful, Ron\n",
+      "keep up the good work and be successful, Robin\n",
+      "keep up the good work and be successful, Raka\n",
+      "keep up the good work and be successful, Rahul\n"
+     ]
+    }
+   ],
+   "source": [
+    "greeting_students(students)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "IndentationError",
+     "evalue": "expected an indented block (<ipython-input-11-7d0782672d73>, line 4)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-11-7d0782672d73>\"\u001b[0;36m, line \u001b[0;32m4\u001b[0m\n\u001b[0;31m    msg= f\"keep up the good work and be successful, {x.title()}\"\u001b[0m\n\u001b[0m      ^\u001b[0m\n\u001b[0;31mIndentationError\u001b[0m\u001b[0;31m:\u001b[0m expected an indented block\n"
+     ]
+    }
+   ],
+   "source": [
+    "def greeting_students(names):\n",
+    "    \"\"\"congratulations for sucessfully completing the course\"\"\"\n",
+    "    for x in names:\n",
+    "    msg= f\"keep up the good work and be successful, {x.title()}\"\n",
+    "    print (msg)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
